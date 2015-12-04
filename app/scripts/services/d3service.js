@@ -7,7 +7,7 @@
  * # d3Service
  * Factory in the chessAnalysisApp.
  */
-angular.module('chessAnalysisApp')
+angular.module('d3', [])
   .factory('d3Service', ['$document', '$q', '$rootScope',
     function ($document, $q, $rootScope) {
         var d = $q.defer();
@@ -23,7 +23,7 @@ angular.module('chessAnalysisApp')
         var scriptTag = $document[0].createElement('script');
         scriptTag.type = 'text/javascript';
         scriptTag.async = true;
-        scriptTag.src = 'http://d3js.org/d3.v3.min.js';
+        scriptTag.src = 'bower_components/d3/d3.js';
         scriptTag.onreadystatechange = function () {
             if(this.readyState === 'complete') {
                 onScriptLoad();
