@@ -32,7 +32,9 @@
     "jshint-stylish": "^1.0.0",
     "karma-jasmine": "*",
     "karma-phantomjs-launcher": "*",
-    "time-grunt": "^1.0.0"
+    "time-grunt": "^1.0.0",
+    "mysql": "^2.5.5",
+    "express" : "^4.13.3"
   },
   "engines": {
     "node": ">=0.10.0"
